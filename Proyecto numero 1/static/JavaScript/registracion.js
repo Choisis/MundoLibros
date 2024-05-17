@@ -19,6 +19,7 @@ const ERROR_APELLIDO_VACIO = "El Apellido no puede estar vacío.";
 const ERROR_EMAIL_VACIO = "El Email no puede estar vacío.";
 const ERROR_PASSWORD_VACIO = "La contraseña no puede estar vacío.";
 const ERROR_BIRTHDATE_VACIO = "La fecha de Nacimiento no puede estar vacío.";
+const ERROR_BIRTHDATE_INVALIDO="La fecha de Nacimiento no puede se mayor a la actual.";
 const ERROR_EMAIL_INVALIDO = "Por favor, introduce un correo electrónico válido.";
 const ERROR_PAIS_VACIO = "Debe seleccionar un pais de origen";
 const ERROR_TYC_VACIO = "Debe aceptar los Terminos y condiciones";
@@ -56,13 +57,15 @@ function validarFormulario(event) {
 
     if (!password) {
         errores.push(ERROR_PASSWORD_VACIO);
-    } else if (password.value.length < 8){
+    } else if (password.length < 8){
         
         errores.push(ERROR_PASSWORD_INVALIDO);
     }
 
     if (!birthdate) {
         errores.push(ERROR_BIRTHDATE_VACIO);
+    }else if(Date.parse(birthdate)>Date.now()){
+        errores.push(ERROR_BIRTHDATE_INVALIDO);
     }
 
     if (!country) {
