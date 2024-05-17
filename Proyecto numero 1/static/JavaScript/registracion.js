@@ -1,6 +1,6 @@
 
 // Obtener referencias a los elementos del formulario
-const nombreInput = document.getElementById('fistName');
+const nombreInput = document.getElementById('firstName');
 const apellidoInput = document.getElementById('lastName');
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
@@ -29,7 +29,7 @@ function validarFormulario(event) {
     event.preventDefault();
 
     const nombre = nombreInput.value.trim();
-    const apellido = apellidoInput.value.trim();
+    const apellido =apellidoInput.value.trim();
     const email = emailInput.value.trim();
     const password = passwordInput.value.trim();
     const birthdate = birthdateInput.value.trim();
@@ -54,7 +54,7 @@ function validarFormulario(event) {
     }
 
     if (!password) {
-        errores.push(ERROR_MENSAJE_VACIO);
+        errores.push(ERROR_PASSWORD_VACIO);
     } else if (password.value.length < 8){
         
         errores.push(ERROR_PASSWORD_INVALIDO);
@@ -64,10 +64,10 @@ function validarFormulario(event) {
         errores.push(ERROR_BIRTHDATE_VACIO);
     }
 
-    if (!country.value === "Seleccione") {
+    if (!country) {
         errores.push(ERROR_COUNTRY_VACIO);
     }    
-    if (!terms) {
+    if (terms==='on') {
         errores.push(ERROR_TYC_VACIO);
     }   
 
