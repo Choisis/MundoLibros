@@ -22,11 +22,12 @@
         </div>
 
     </nav>
-    <main>
-        <div class="container">
-                <h2 class="titulo-principal">Registrarse</h2>
+  
+       
                      
-        <form action="#" method="post">
+    <form Id="formRegistracion" novalidate action="#">
+        <div class="container">
+            <h2 class="titulo-principal">Registrarse</h2>
             <div class="form-group">
                 <label for="firstName">Nombre:</label>
                 <input type="text" name="firstName" id="firstName"  required>
@@ -67,11 +68,13 @@
                     <input type="checkbox" id="terms" name="terminos" required>
                     <label for="terms">Acepto términos y condiciones</label>
             </div>
+            <div class="error-message" id="errores"></div>
             <button type="submit">Registrarse</button>
-            </form>
         </div>
-     </main>
-
+    </form>
+    <script src="../static/JavaScript/registracion.js"></script>
+     
+     
 
 </body>
 </html>
