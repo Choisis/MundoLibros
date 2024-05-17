@@ -168,7 +168,7 @@
     footer {
         background-color: #6CB06D;
         border: 4px double black;
-        color: white;
+        /* color: white; */
         padding: 20px;
     }
     .footer-content {
@@ -201,6 +201,7 @@
     }
 
     #terminosCondiciones {
+        cursor: pointer;
         border: none;
         background-color: #6CB06D;
         font-size: 20px;

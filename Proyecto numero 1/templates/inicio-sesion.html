@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./inicio-sesion.html">
+    <link rel="stylesheet" href="../static/css/inicio-sesion.css">
+    <link rel="book icon" href="./static/img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/b9a89b4692.js" crossorigin="anonymous"></script>
+    <title>Inicio de Sesión</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <a href="../index.html" class="logo-text">
+                <i class="fa-solid fa-book-open"></i>
+                    Mundo Libro
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <a href="./register.html">Registrarse</a>   
+                </li>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <section class="cuerpo-login">
+    <div class="login-container">
+        <h2>Inicio de Sesión</h2>
+        <form action="/login" method="post">
+            <label for="username">Usuario</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="social-icons">
+            <a href="#"><img src="../static/img/instagram.png" alt="Instagram"> @MundoLibro</a><br>
+            <a href="#"><img src="../static/img/facebook.png" alt="Facebook"> MundoLibro</a><br>
+            <a href="#"><img src="../static/img/twitter.png" alt="Twitter"> MundoLibro</a>
+        </div>
+        <div class="footer-links">
+            <button type="button" id="terminosCondiciones">Términos y condiciones</button>
+            <div class="popup" id="popup">
+                <div class="popup-contenido">
+                    <h2 id="nombre-de-la-tienda-política-de-términos-y-condiciones"> Mundo Libros Política de Términos y Condiciones</h2>
+                        <p>Bienvenido a Mundo Libros. Estos términos y condiciones describen las reglas y regulaciones para el uso del sitio web (Nombre de la tienda).</p>
+                        <p><strong>Mundo Libros se encuentra en (Dirección).</strong></p>
+                        <p>Al acceder a este sitio web, asumimos que aceptas estos términos y condiciones en su totalidad. No continúes usando el sitio web (Nombre de la tienda) si no aceptas todos los términos y condiciones establecidos en esta página.</p>
+                        <p>La siguiente terminología se aplica a estos Términos y Condiciones, Declaración de Privacidad y Aviso legal y cualquiera o todos los Acuerdos: el <strong>Cliente</strong>, <strong>Usted</strong> y <strong>Su</strong> se refieren a usted, la persona que accede a este sitio web y acepta los términos y condiciones de la Compañía. La <strong>Compañía, Nosotros mismos, Nosotros y Nuestro</strong>, se refiere a nuestra Compañía. <strong>Parte, Partes o Nosotros</strong>, se refiere en conjunto al Cliente y a nosotros mismos, o al Cliente o a nosotros mismos.</p>
+                        <p>Todos los términos se refieren a la oferta, aceptación y consideración del pago necesario para efectuar el proceso de nuestra asistencia al Cliente de la manera más adecuada, ya sea mediante reuniones formales de una duración fija, o por cualquier otro medio, con el propósito expreso de conocer las necesidades del Cliente con respecto a la provisión de los servicios/productos declarados de la Compañía, de acuerdo con y sujeto a la ley vigente de (Dirección).</p>
+                        <p>Cualquier uso de la terminología anterior u otras palabras en singular, plural, mayúsculas y/o, él/ella o ellos, se consideran intercambiables y, por lo tanto, se refieren a lo mismo.</p>
+                        <p><strong>Cookies</strong></p>
+                        <p>Empleamos el uso de cookies. Al utilizar el sitio web de (Nombre de la tienda), usted acepta el uso de cookies de acuerdo con la política de privacidad de (Nombre de la tienda). La mayoría de los modernos sitios web interactivos de hoy en día usan cookies para permitirnos recuperar los detalles del usuario para cada visita.</p>
+                        <p>Empleamos el uso de cookies. Al utilizar el sitio web de (Nombre de la tienda), usted acepta el uso de cookies de acuerdo con la política de privacidad de (Nombre de la tienda). La mayoría de los modernos sitios web interactivos de hoy en día usan cookies para permitirnos recuperar los detalles del usuario para cada visita.</p>
+                    <button id="cerrarPopup">Cerrar</button>
+                </div>
+            </div>
+            <script src="../static/JavaScript/terminos-condiciones.js"></script>
+        </div>
+        <div class="footer-links">
+            <a href="../templates/contacto.html">Contact Me</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

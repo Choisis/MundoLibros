@@ -1,0 +1,233 @@
+*{
+    margin: 0; /*margin establece el margen para los cuatro lados*/
+    padding: 0; /*padding establece el espacio de relleno*/
+    /*background-color: beige; /*cambia el color de relleno*/
+    /*font-family: Verdana; /*cambia el tipo de letra*/
+    box-sizing: border-box;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{   
+    background-color: #D4F5D5;
+    font-size: 20px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+.cuerpo-login {
+    border: 2px dotted green;
+    padding: 27px 500px 27px 500px;
+}
+.login-container {
+    text-align: center;
+    align-content: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.login-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.login-container input[type="text"],
+
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.login-container button:hover {
+    background-color: #45a049;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+header{
+    /* position: fixed; */
+    /* la ser fixed y nos er static pierde el valor de width al 100% que viene por defectoo */
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+
+}
+
+nav{
+    background-color: #63A964;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 10px;
+    height: 55px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    z-index: 1;
+}
+
+#logo {
+    font-weight: bold;
+    /* text-align: center; */
+    padding: 5px;
+}
+
+.btn-primary{
+    background-color: #63A964;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    color: #3F6F40;
+    border: 2px solid #3F6F40 ;
+    transition: color 3s ease;
+}
+
+footer {
+    background-color: #6CB06D;
+    border: 4px double black;
+    color: #6CB06D;
+    padding: 20px;
+}
+.footer-content {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.social-icons {
+    display: inline-block;
+
+}
+
+.social-icons a {
+    display: block;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.social-icons img {
+    width: 20px; /* Ajusta el tamaño de las imágenes según tus preferencias */
+}
+
+.footer-links {
+    display: inline-block;
+}
+
+.footer-links a {
+    color: white;
+    margin-right: 20px;
+}
+
+#terminosCondiciones {
+    border: 2px dotted green;
+    cursor: pointer;
+    border: none;
+    background-color: #6CB06D;
+    font-size: 20px;
+    color: white;
+    }
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.popup-contenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.popup-contenido h2 {
+    margin-top: 0;
+}
+
+.popup-contenido button {
+    padding: 20px 40px;
+    margin-top: 20px;
+    background-color: #6CB06D;
+    color: #f8f8f8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-contenido button:hover {
+    background-color: #6CB06D;
+}
+
+/* TABLETS */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+h1{
+    font-size: 3vw;
+}
+#banner{
+    height: 400px;
+}
+#search{
+    height: 200px;
+}
+}
+
+/* CELULARES */
+@media screen and (min-width: 450px) and (max-width: 767px) {
+.login-text {
+    /* visibility: hidden; */
+    display: none;
+}
+#banner{
+    height: 400px;
+}
+.grilla-books{
+    /* display: grid; */
+    grid-template-columns: repeat(2,1fr);
+}
+}
+
+@media screen and (max-width: 449px) {
+#banner{
+    height: 200px;
+    background-size: cover;
+    width: 500px;
+}
+.grilla-books{
+    display: block;
+}    
+}
