@@ -201,7 +201,7 @@
     }
 
     #terminosCondiciones {
-        border: 2px dotted green;
+        border: none;
         background-color: #6CB06D;
         font-size: 20px;
         color: white;
