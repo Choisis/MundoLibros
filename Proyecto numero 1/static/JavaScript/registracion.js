@@ -34,7 +34,8 @@ function validarFormulario(event) {
     const password = passwordInput.value.trim();
     const birthdate = birthdateInput.value.trim();
     const country = countrySelect.value.trim();
-    const terms = tycInput.value.trim();
+    /*const terms = tycInput.value.trim();*/
+
 
 
     const errores = [];
@@ -65,11 +66,15 @@ function validarFormulario(event) {
     }
 
     if (!country) {
-        errores.push(ERROR_COUNTRY_VACIO);
-    }    
-    if (terms==='on') {
+        errores.push(ERROR_PAIS_VACIO);
+    } 
+
+    if (terms.checked) {
+        terms.value = 'true';
+    } else {
+        terms.value = 'false';
         errores.push(ERROR_TYC_VACIO);
-    }   
+    }
 
     if (errores.length > 0) {
         erroresDiv.innerText = errores.join("\n");
