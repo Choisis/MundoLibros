@@ -92,19 +92,15 @@ nav{
     font-size: 1.5em;
 }
 
-/* Para pantallas pequeñas (móviles) */
-@media (max-width: 350px) {
+
+@media screen and (min-width: 1024px) {
     .container {
         width: 100%;
-        max-width: 350px;
+        width: 500px;
     }
     .form-group {
         flex-direction: row;
         align-items: center;
-    }
-
-    label {
-        width: 150px;
     }
 
     input[type="text"],
@@ -113,7 +109,7 @@ nav{
     input[type="date"],
     select {
         flex: 1;
-        width: calc(100% - 160px);
+        width: calc(100% - 70px);
     }
     .checkbox-group label {
         width: auto; /* Ajustar para checkbox y espaciado */
@@ -124,37 +120,7 @@ nav{
     }
 }
 
-@media (max-width: 600px)  {
-    .container {
-        width: 100%;
-        max-width: 400px;
-    }
-    .form-group {
-        flex-direction: row;
-        align-items: center;
-    }
-
-    label {
-        width: 150px;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    input[type="date"],
-    select {
-        flex: 1;
-        width: calc(100% - 160px);
-    }
-    .checkbox-group label {
-        width: auto; /* Ajustar para checkbox y espaciado */
-    }
-
-    .checkbox-group input {
-        margin-left: 10px;
-    }
-}
-@media (min-width: 1024px) {
+@media screen and (max-width: 600px)  {
     .container {
         width: 100%;
         max-width: 500px;
@@ -184,4 +150,37 @@ nav{
         margin-left: 10px;
     }
 }
+/* Para pantallas pequeñas (móviles) */
+@media screen and (max-width: 900px) {
+    .container {
+        width: 100%;
+        max-width: 500px;
+    }
+    .form-group {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    label {
+        width: 150px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    select {
+        flex: 1;
+        width: calc(100% - 160px);
+    }
+    .checkbox-group label {
+        width: auto; /* Ajustar para checkbox y espaciado */
+    }
+
+    .checkbox-group input {
+        margin-left: 10px;
+    }
+}
+
+
 
