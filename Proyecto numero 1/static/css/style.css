@@ -200,6 +200,13 @@
         margin-right: 20px;
     }
 
+    #terminosCondiciones {
+        border: 2px dotted green;
+        background-color: #6CB06D;
+        font-size: 20px;
+        color: white;
+        }
+        
     .popup {
         display: none;
         position: fixed;
