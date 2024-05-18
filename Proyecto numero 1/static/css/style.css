@@ -278,21 +278,34 @@
         background-color: #6CB06D;
     }
 
-    /* TABLETS */
-    @media screen and (min-width: 768px) and (max-width: 1023px) {
-    h1{
-        font-size: 3vw;
+    /* Estilos para PC */
+@media screen and (min-width: 1024px) {
+    .grilla-books{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        padding-left: 50px;
     }
-    #banner{
-        height: 400px;
+}
+
+
+    /* Estilos para Tablet */
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+    * {
+        font-size: 20px;
     }
-    #search{
-        height: 200px;
+    a {
+        font-size: 20px;
     }
+    .grilla-books{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        padding-left: 25px;
     }
+}
+
 
     /* CELULARES */
-    @media screen and (min-width: 450px) and (max-width: 767px) {
+    @media screen and (min-width: 600px) and (max-width: 899px) {
     .login-text {
         /* visibility: hidden; */
         display: none;
@@ -306,14 +319,67 @@
     }
     }
 
-    @media screen and (max-width: 449px) {
+    @media screen and (min-width: 200px) and (max-width: 599px) {
+        * {
+            font-size: 18px;
+        }
+        a {
+            font-size: 18px;
+        }
+        .login-text {
+            /* visibility: hidden; */
+            display: none;
+        }
     #banner{
-        height: 200px;
+        height: 300px;
         background-size: cover;
-        width: 500px;
+        width: 670px;
     }
+    #search div {
+        /* border: 2px dotted green; */
+        padding: 10px;
+        width: 670px;
+        margin: auto;
+        text-align: center;
+    }
+
     .grilla-books{
-        display: block;
-    }    
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 150px;
+        padding-left: 220px;
+    }
+/* 
+    .book-item{
+        border: 2px dotted green;
+        padding-right: 100%;
+    } */
+    #trending {
+        padding: 10px;
+        width: 670px;
+        margin: auto;
+        text-align: center;
+    }
+
+    #recommendations {
+        padding: 10px;
+        width: 670px;
+        margin: auto;
+        text-align: center;
+    }
+    footer {
+        background-color: #6CB06D;
+        border: 4px double black;
+        /* color: white; */
+        width: 670px;
+        /* margin: 0; */
+    }
+    footer a {
+        font-size: 15px;
+    }
+    #terminosCondiciones{
+        font-size: 15px;
+    }
+
     }
 
