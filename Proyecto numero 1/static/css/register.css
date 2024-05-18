@@ -9,6 +9,13 @@ body {
     background-size: cover;
 }
 
+#logo {
+    font-weight: bold;
+    /* text-align: center; */
+    padding: 5px;
+    
+}
+
 .container {
     background-color: #d9f8cf;
     padding: 20px;

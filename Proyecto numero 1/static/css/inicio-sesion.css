@@ -13,8 +13,7 @@ body{
     font-family: Calibri, 'Trebuchet MS', sans-serif;
 }
 .cuerpo-login {
-    border: 2px dotted green;
-    padding: 27px 500px 27px 500px;
+    padding: 29px 500px 30px 500px;
 }
 .login-container {
     text-align: center;
@@ -88,6 +87,10 @@ nav ul {
     font-weight: bold;
     /* text-align: center; */
     padding: 5px;
+}
+
+#logo-text{
+    font-size: 25px;
 }
 
 .btn-primary{

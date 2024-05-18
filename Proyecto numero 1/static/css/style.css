@@ -66,6 +66,31 @@
         padding: 1vw 43vw ;
         
     } */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #D4F5D5;
+        z-index: 1;
+        border-radius: 10px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2)
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 9px 12px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        font-size: 18px;
+    }
+    .dropdown-content a:hover {
+        background-color: #6CB06D;
+        color: white;
+        border-radius: 10px;
+    }
+    .nombre-grupos:hover .dropdown-content{
+        display: block;
+    }
 
     .btn-primary{
         background-color: #63A964;
